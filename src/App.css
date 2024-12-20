@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Nerko+One&display=swap');
+/*///////////////////////////////////////////////////////////*/
+/* Estilos Generales para toda la pagina */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: "Mukta Malar", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: white;
+}
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fin de estilos Generales para toda la pagina */
+/*///////////////////////////////////////////////////////////*/
+
+/* Estilos Generales para Header */
+
+.main-page {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/minecraft-header.png");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.main-page-items {
+    height: 295px;
+    width: 1170px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: white;
+}
+
+
+.header {
+    height: 100px;
+    padding: 8px 0 0 0;
+    display: flex;
+    position: relative;
+}
+
+.hr-logo-container {
+    height: 40px;
+    width: 292px;
+    padding: 0 15px 0 15px;
+    margin: 20px 0 0 180px;
+}
+
+.hr-logo {
+    height: 40px;
+    width: 135px;
+}
+
+.nb-main-container {
+    height: 40px;
+    width: 877px;
+    padding: 0 15px 0 15px;
+    margin: 20px 20px 0 20px;
+}
+
+.nb-container {
+    height: 40px;
+    width: 847px;
+    display: flex;
+}
+
+/*///////////////////////////////////////////////////////////*/
+/* Estilos Generales para Arrow */
+
+.mp-icon-container {
+    position: absolute;
+    top: 635px;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    animation: floatloop 2s ease-in-out infinite;
+}
+
+@keyframes floatloop {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*///////////////////////////////////////////////////////////*/
+/* Estilos Generales para Footer-extended */
+
+.footer-extended {
+    height: 226.6px;
+    width: 1519.2px;
+    border-top: 1px solid #E4E8ED;
+    background-color: #F6F7F8;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-extended-container {
+    height: 226.6px;
+    width: 1140px;
+}
+
+/* Fin de estilos Generales para footer-extended*/
+/*///////////////////////////////////////////////////////////*/
+
+/* Estilos Generales para Footer*/
+
+.footer {
+    height: 128.2px;
+    width: 1519.2px;
+    background-color: #F6F7F8;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-row {
+    height: 48.2px;
+    width: 1090px;
+    display: block;
+}
+
+/* Fin de estilos Generales para footer*/

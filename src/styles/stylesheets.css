@@ -1,0 +1,558 @@
+/* Estilos para las cualidades de la pagina */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+/* Estilos para componente HeaderNavbar y HeaderNavbarList*/
+
+.header-row-items {
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.headernavbarlist-container {
+    display: flex;
+}
+
+.header-row-items-menulist {
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.hrim-icon {
+    font-size: 10px;
+    font-weight: 300;
+    margin: 0 10px 0 10px;
+}
+
+.hrim-ul, .hri-ul, .hrim-li ul, .hrim-li a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+.hrim-menulist {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 3px;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.hrim-li:hover .hrim-menulist {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hrim-li li {
+    margin: 10px;
+    width: 100px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.hrim-menulist a {
+    font-size: 15px;
+    color: rgb(50, 50, 50);
+}
+
+.hrim-menulist i {
+    font-size: 10px;
+    align-items: center;
+    text-align: right;
+    margin-left: 10px;
+    color: #666666;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////*/
+/* Estilos para componente MainPageTexts*/
+
+.mp-container {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    width: 570px;
+}
+
+.mp-maintext {
+    font-size: 80px;
+    font-weight: 300;
+}
+
+.mp-secondtext {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////*/
+
+.main-container {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80vh;
+    margin: 30px;
+}
+
+.qualities-image {
+    height: 1.6rem;
+    width: auto;
+    margin: 10px;
+}
+
+.qualities-image-container {
+    border: 1px solid rgba(128, 128, 128, 0.403);
+    border-radius: 50%;
+    padding: 15px;
+    margin: 30px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.qualities-title {
+    font-weight: 50;
+    font-size: 26px;
+    text-align: left;
+}
+
+.qualities-text {
+    text-align: justify;
+    line-height: 25px;
+    font-size: 16px;
+    color: rgba(128, 128, 128, 0.922);;
+}
+
+.qualities-texts-container {
+    align-items: center;
+    justify-content: center;
+}
+/* Fin de estilos para las cualidades de la pagina */
+
+/*//////////////////////////////////////////////////////////////////////////*/
+
+/* Estilos para los subtitulos de la pagina */
+
+.subtitles-container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 90px 300px;
+    font-family: "Mukta Malar", sans-serif;
+}
+
+.subtitle-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 112vh;
+}
+
+.subtitle-text {
+    font-weight: 100;
+    color: rgba(128, 128, 128, 0.922);
+}
+
+.subtitle-title {
+    font-size: 2.8rem;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+/* Fin de estilos para los subtitulos de la pagina */
+/*//////////////////////////////////////////////////////////////////////////*/
+/*Estilos para componente Screenshots */
+.ss-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 284.75px;
+    width: 292.5px;
+    margin: 15px;
+}
+
+.ss-image {
+    height: 151.85px;
+    width: auto;
+    border: 1px solid #CBD3DD;
+    padding: 4px;
+    filter: grayscale(100%);
+    transition: all 0.4s ease;
+}
+
+.ss-image:hover {
+    filter: none;
+}
+
+.ss-title {
+    font-weight: 300;
+    font-size: 25px;
+    margin: 0 0 13px 0;
+}
+
+.ss-text {
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(128, 128, 128, 0.922);
+    text-align: justify;
+}
+
+.ss-tt {
+    text-align: left;
+}
+
+.ss-image {
+    cursor: pointer;
+}
+
+/* Estilo para el modal, con un fondo oscuro que se activa al abrir */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Fondo inicialmente transparente */
+    backdrop-filter: blur(3px); /* Opcional: Si deseas el desenfoque de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transiciones en ambos atributos */
+  }
+  
+  /* Estilo para el modal cuando se abre, que oscurece el fondo */
+  .modal.open {
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurece el fondo cuando el modal está abierto */
+    opacity: 1; /* Hace visible el modal */
+  }
+  
+  /* Estilos para el contenido del modal */
+  .modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Asegúrate de que el contenido esté por encima del fondo */
+  }
+  
+  /* Imagen expandida */
+  .ss-expanded-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+  }
+/* Fin de estilos para componente Screenshots */
+/*//////////////////////////////////////////////////////////////////////////*/
+/*Estilos para componente Questions */
+
+.qs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    height: 255.4px;
+    width: 390px;
+}
+
+.qs-maintexts {
+    height: 255.4px;
+    width: 360px;
+}
+
+.qs-title h4{
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+.qs-text {
+    color: rgba(128, 128, 128, 0.922);
+    font-size: 16px;
+}
+
+/* Fin de estilos para componente Questions */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+/*Estilos para componente Viewallbtn */
+
+.va-main-container {
+    position: relative;
+    height: 101.6px;
+    width: 1200px;
+    padding: 0 15px 0 15px;
+}
+
+.va-sub-container {
+    height : 101.6px;
+    width : 570px;
+    margin : 0 285px 0 285px;
+    display: block;
+    text-align: center;
+}
+
+.va-container {
+    height: 41.6px;
+    width: 125px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2288CC;
+    border-radius: 40px;
+    margin: 30px 0 30px 0;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.va-container:hover {
+    background-color: #2288CC;
+}
+
+.va-title {
+    text-decoration: none;
+    color: #2288CC;
+    font-size: 14px;
+    line-height: 43px;
+    letter-spacing: 2px;
+}
+
+.va-container:hover .va-title {
+    color: white;
+}
+
+.va-icon {
+    font-size: 12.5px;
+    color: #2288CC;
+    height: 14px;
+    width: 7px;
+    margin: 0 -2px -2px 12px;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.va-container:hover .va-icon {
+    margin-left: 20px;
+    color: white;
+}
+
+/* Fin de estilos para componente ViewAllBtn */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+/*Estilos para componente Features */
+
+.fs-main-container {
+    height: 88.2px;
+    width: 292.5px;
+    display: flex;
+    margin: 70px 10px 50px 10px;
+}
+
+.numbercounter-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fs-image {
+    height: 53px;
+    width: auto;
+    margin: 0 20px 20px 20px;
+    opacity: 0.4;
+}
+
+.fs-title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.fs-titleplus {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.fs-text {
+    font-weight: 400;
+    font-size: 15px;
+    color: #2288CC;
+}
+/* Fin de estilos para componente Features */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+/*Estilos para componente Footeritems */
+
+.fi-main-container {
+    margin: 10px;
+    display: flex;
+}
+
+.fi-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 145px;
+    width: 195px;
+}
+
+.fi-title {
+    font-size: 15px;
+    font-weight: 300;
+    color: #2288CC;
+}
+
+.fi-container li {
+    display: flex;
+    flex-direction: column;
+}
+
+.fi-container a {
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+}
+
+.fi-container a:hover {
+    text-decoration: underline;
+}
+
+/* Fin de estilos para componente Footeritems */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+/*Estilos para componente FooteritemsYT */
+
+.fiyt-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 145px;
+    width: 195px;
+}
+
+.fiyt-container li {
+    display: flex;
+    flex-direction: column;
+}
+
+.fiyt-container a {
+    font-size: 15px;
+    color: #666666;
+    text-decoration: none;
+    margin: 0 15px 0 0;
+}
+
+.fiyt-title {
+    font-size: 15px;
+    font-weight: 300;
+    color: #2288CC;
+}
+/* Fin de estilos para componente Footeritems */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+/*Estilos para componente Footer */
+
+.footer-main-container {
+    display: flex;
+}
+
+.footer-logo-wrapper {
+    display: flex;
+    height: 40px;
+    width: 262.5px;
+}
+
+.fo-image {
+    height: 40px;
+    width: auto;
+}
+
+.fo-slogan {
+    line-height: 13.2px;
+    font-size: 13px;
+    font-weight: 300;
+    height: 40px;
+    width: 45px;
+    color: #808488;
+    margin: 0 0 0 10px;
+}
+
+.right-footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 48.2px;
+    width: 847.5px;
+}
+
+.right-footer ul {
+    list-style-type: none;
+}
+
+.right-footer a {
+    font-size: 13px;
+    color: #808488;
+    text-decoration: none;
+}
+
+.right-footer a:hover {
+    text-decoration: underline;
+}
+
+.right-footer p {
+    font-size: 13px;
+    color: #808488;
+    text-decoration: none;
+}
+
+.fo-rf-span {
+    font-size: 15px;
+    text-align: center;
+    color: #666666;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    border: 1px solid #CBD3DD;
+    border-radius: 3px;
+    display: grid;
+    place-items: center;
+}
+
+.fo-rf-span:hover {
+    cursor: pointer;
+}
+
+.fo-rf-icon {
+    text-align: center;
+    align-items: center;
+    transition: all 0.3s;
+    margin-bottom: 0;
+}
+
+.fo-rf-span:hover .fo-rf-icon {
+    margin-bottom: 5px;
+}
+
+/* Fin de estilos para componente Footer*/
+/*//////////////////////////////////////////////////////////////////////////*/
