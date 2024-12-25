@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/liquidbounce-clon/static/css/main.e6a8990e.css",
+    "main.js": "/liquidbounce-clon/static/js/main.60a38cfb.js",
+    "static/media/minecraft-header.png": "/liquidbounce-clon/static/media/minecraft-header.a075a8f5a0801df78d62.png",
+    "static/media/xray.png": "/liquidbounce-clon/static/media/xray.58cf3b79589c74d26caa.png",
+    "static/media/hud.png": "/liquidbounce-clon/static/media/hud.5d31b4d17a840df2a0ca.png",
+    "static/media/clickgui.png": "/liquidbounce-clon/static/media/clickgui.3aa1cec997ac3fd1d7ca.png",
+    "static/media/main-menu.png": "/liquidbounce-clon/static/media/main-menu.e9413b30a356e275fff6.png",
+    "static/media/ccbluex-logo.png": "/liquidbounce-clon/static/media/ccbluex-logo.090395db60d9ea61e5d6.png",
+    "static/media/main-logo.svg": "/liquidbounce-clon/static/media/main-logo.3d048184cc8e4a752096e00b006ebe63.svg",
+    "index.html": "/liquidbounce-clon/index.html",
+    "main.e6a8990e.css.map": "/liquidbounce-clon/static/css/main.e6a8990e.css.map",
+    "main.60a38cfb.js.map": "/liquidbounce-clon/static/js/main.60a38cfb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6a8990e.css",
+    "static/js/main.60a38cfb.js"
+  ]
+}
